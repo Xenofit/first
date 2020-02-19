@@ -5,97 +5,110 @@
   	<title>Document</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-  	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 </head>
 <body>
-  <section class="page_field">
+  <section class="page-field">
     <div class="grid">
           <div class="grid__item">
-                <h3> &copy; Author of the photo </h3>
+                <h3 class="grid__heading"> &copy; Author of the photo </h3>
                 <img src="images/img1.jpg" alt="" class="grid__image">
           </div>
           <div class="grid__item">
-                <h3> &copy; Author of the photo </h3>
+                <h3 class="grid__heading"> &copy; Author of the photo </h3>
                 <img src="images/img2.jpg" alt="" class="grid__image">    
           </div>
           <div class="grid__item">
-                <h3> &copy; Author of the photo </h3>
+                <h3 class="grid__heading"> &copy; Author of the photo </h3>
                 <img src="images/img3.jpg" alt="" class="grid__image">    
           </div>
           <div class="grid__item">
-                <h3> &copy; Author of the photo </h3>
+                <h3 class="grid__heading"> &copy; Author of the photo </h3>
                  <img src="images/img4.jpg" alt="" class="grid__image">
           </div>
           <div class="grid__item">
-                <h3> &copy; Author of the photo </h3>
+                <h3 class="grid__heading"> &copy; Author of the photo </h3>
                 <img src="images/img5.jpg" alt="" class="grid__image">
           </div>
           <div class="grid__item">
-                <h3> &copy; Author of the photo </h3>
+                <h3 class="grid__heading"> &copy; Author of the photo </h3>
                 <img src="images/img6.jpg" alt="" class="grid__image">
           </div>
           <div class="grid__item">
-                <h3> &copy; Author of the photo </h3>
+                <h3 class="grid__heading"> &copy; Author of the photo </h3>
                 <img src="images/img7.jpg" alt="" class="grid__image">
           </div>
           <div class="grid__item">
-                <h3> &copy; Author of the photo </h3>
+                <h3 class="grid__heading"> &copy; Author of the photo </h3>
                 <img src="images/img8.jpg" alt="" class="grid__image">
           </div>
           <div class="grid__item">
-                <h3> &copy; Author of the photo </h3>
+                <h3 class="grid__heading"> &copy; Author of the photo </h3>
                 <img src="images/img9.jpg" alt="" class="grid__image">
           </div>
           <div class="grid__item">
-                <h3> &copy; Author of the photo </h3>
+                <h3 class="grid__heading"> &copy; Author of the photo </h3>
                 <img src="images/img10.jpg" alt="" class="grid__image">
           </div>
           <div class="grid__item">
-                <h3> &copy; Author of the photo </h3>
+                <h3 class="grid__heading"> &copy; Author of the photo </h3>
                 <img src="images/img11.jpg" alt="" class="grid__image">
           </div>
           <div class="grid__item">
-                <h3> &copy; Author of the photo </h3>
+                <h3 class="grid__heading"> &copy; Author of the photo </h3>
                 <img src="images/img12.jpg" alt="" class="grid__image">
           </div>
           
     </div>
-    <div class="false-block"></div>
+    <div class="page-field__false-block"></div>
   </section>
 
   <footer class="footer-container">
       <nav class="main-menu">
         <ul class="main-menu__list">
               <li class="main-menu__item">
-                    <a href="#">More</a> 
+                    <a href="#" class="main-menu__link">More</a> 
               </li>
               <li class="main-menu__item">
-                    <a href="#">Projects</a>
+                    <a href="#" class="main-menu__link">Projects</a>
                           <ul class="main-menu__parent-nested-list">
-                               <li class="nested-list"><a href="#">New projects</a></li>
-                               <li class="nested-list"><a href="#">Old projects</a></li>
-                               <li class="nested-list"><a href="#">Future projects</a></li>
+                               <li class="nested-list">
+                                <a href="#" class="main-menu__link">New projects</a>
+                              </li>
+                               <li class="nested-list">
+                                <a href="#" class="main-menu__link">Old projects</a>
+                              </li>
+                               <li class="nested-list">
+                                <a href="#" class="main-menu__link">Future projects</a>
+                              </li>
                          </ul>
                    </li>
              <li class="main-menu__item">
-                <a href="#">Contacts</a>
+                <a href="#" class="main-menu__link">Contacts</a>
              </li>
              <li class="main-menu__item main-menu__item_right-align" onclick="showAndHidePanel()" id="main-menu__item">
-                <span>About</span>
+                <span class="main-menu__link">About</span>
              </li>
         </ul> 
       </nav> 
   </footer>
+
   <div class="active-panel" id="active-panel">
-    <div class="active-panel_close" onclick="showAndHidePanel()"></div>
+    <div class="active-panel__block-exit active-panel__block-exit_hide" onclick="showAndHidePanel()"></div>
           <div class="active-panel__flex-wrapper">
             <div class="active-panel__text">
                   <h2 class="active-panel__header2">ABOUT US</h2>
                   <p class="active-panel__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                   <h2 class="active-panel__header2">FOLLOW ME ON... </h2>
-                  <a href="https://vk.com/feed" class="active-panel__link"><img src="images/vk.png" alt="VK"></a>
-                  <a href="https://www.facebook.com/" class="active-panel__link"><img src="images/facebook.png" alt="facebook"></a>
-                  <a href="https://twitter.com/" class="active-panel__link"><img src="images/twit.png" alt="twitter"></a>
+                  <a href="https://vk.com/feed" class="active-panel__link">
+                    <img src="images/vk.png" alt="VK">
+                  </a>
+                  <a href="https://www.facebook.com/" class="active-panel__link">
+                    <img src="images/facebook.png" alt="facebook">
+                  </a>
+                  <a href="https://twitter.com/" class="active-panel__link">
+                    <img src="images/twit.png" alt="twitter">
+                  </a>
             </div>
             <div class="active-panel__form-wrapper">
               <h2 class="active-panel__header2">GET IN TOUCH</h2>
@@ -114,8 +127,5 @@
   </script>
   <script src="js/active__panel.js">
   </script>
-
-
-
 </body>
 </html>
